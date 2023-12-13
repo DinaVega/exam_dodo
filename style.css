@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: lightgray;
+  margin: 0, auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: Nunito;
+  font-style: normal;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: 0;
+  border: 0;
+  color: inherit;
+}
+
+.order__card {
+  max-width: 780px;
+  background-color: #fff;
+  padding: 40px;
+  margin: 20px;
+}
+
+.order__no {
+  color: #73798c;
+  font-weight: 400;
+}
+
+.order__wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.order__decor {
+  max-width: 700px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #e2e2e9;
+  margin-top: 31px;
+  margin-bottom: 9px;
+}
+
+.address {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.address__font {
+  font-weight: 400;
+}
+
+.order__bts {
+  margin-top: 70px;
+}
+
+.order__bts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__cancel {
+  padding: 13px 20px;
+  color: #d15700;
+  background-color: #fff0e6;
+  border-radius: 1000px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn__cancel:hover {
+  background-color: #ffd0b2;
+  color: #d55406;
+}
+
+.btn__return {
+  padding: 13px 27px;
+  color: #fff;
+  background-color: #f96900;
+  border-radius: 1000px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn__return:hover {
+  background-color: #ed5d08;
+  color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 780px) {
+  .wrapper__right {
+    display: none;
+  }
+
+  .order__card {
+    padding: 16px;
+    max-width: 320px;
+  }
+
+  .order__no {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .order__decor {
+    display: none;
+  }
+
+  .address__wrap {
+    padding: 18px 20px;
+    background-color: #f3f3f7;
+    border-radius: 10px;
+  }
+
+  .address {
+    display: block;
+  }
+
+  span {
+    margin-top: 4px;
+  }
+
+  .order__bts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  .btn__cancel {
+    margin-bottom: 10px;
+    /* width: max-content; */
+    width: 100%;
+  }
+
+  .btn__return {
+    width: 100%;
+    /* width: max-content; */
+  }
+}
